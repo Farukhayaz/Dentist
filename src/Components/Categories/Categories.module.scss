@@ -1,0 +1,36 @@
+// Categories.module.scss
+
+.decoration {
+    padding: 100px;
+    width: 85%;
+    margin: auto;
+    @media screen and (max-width: 768px) {
+    
+    padding: 10px;}
+  }
+  
+  .section-title {
+font-weight: 700;
+line-height: 38.2px;
+letter-spacing: -0.005em;
+    font-size: 32px;
+    font-family: var(--font-family2);
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .decoration__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  
+    @media screen and (max-width: 1024px) {
+    }
+  
+    @media screen and (max-width: 768px) {
+    }
+  
+    @media screen and (max-width: 480px) {
+    }
+  }
+  

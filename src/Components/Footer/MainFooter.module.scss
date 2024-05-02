@@ -1,0 +1,136 @@
+/* MainFooter.css */
+
+/* Base styles */
+.footer {
+    padding: 40px 0;
+    color: white !important; 
+  }
+  
+  .container {
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+  
+  .grid div {
+    text-align: left;
+    margin-left: 40px;
+  }
+  
+  .grid h2 {
+    margin-bottom: 16px;
+    font-family: var(--font-family2);
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 38.2px;
+    letter-spacing: -0.005em;
+    text-align: left;
+  }
+  
+  .grid ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .grid ul li {
+    margin-bottom: 8px;
+  }
+  
+  .grid ul li a {
+    text-decoration: none;
+    display: flex;
+align-items: center;
+    color: white;
+    text-decoration-line: none;
+    font-family: var(--font-family1);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: justified;
+  }
+  
+  .grid ul li a:hover {
+  }
+  
+  .footer_bottom {
+    display: flex;
+    justify-content: center;
+    background: var(--primary-text);
+    align-items: center;
+    margin-top: 40px;
+    font-family: var(--font-family3);
+    font-size: 18px;
+  }
+  
+  .footer_bottom span {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .social_icons a {
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  
+  .social_icons a:hover {
+  }
+  
+  .para {
+    font-family: var(--font-family2);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.005em;
+    text-align: left;
+  }
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    
+  }
+  
+  .grid div {
+    margin-left: 0;
+    text-align: center;
+  }
+  
+  .grid h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  
+  .grid ul li a {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+    width: 75%;
+    margin: auto;
+  }
+  
+  .footer_bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .social_icons {
+    margin-top: 20px;
+  }
+}
+
+.icon{
+  font-size: 20px;
+  margin-right: 10px;
+}

@@ -1,0 +1,43 @@
+// CategoriesCard.module.scss
+
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 290px;
+    font-family: var(--font-family1);
+    margin-bottom: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+  
+  .img {
+    // width: 104px; /* Adjust image size */
+    // height: 100px; /* Adjust image size */
+    margin: 0 auto 15px;
+  }
+  
+  .title {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: -0.005em;
+    text-align: left;
+    color: var(--primary-text);
+    margin-bottom: 10px;
+  }
+  
+  .description {
+font-size: 18px;
+font-weight: 400;
+line-height: 25px;
+letter-spacing: -0.005em;
+text-align: left;
+    margin-bottom: 20px;
+  }
+  

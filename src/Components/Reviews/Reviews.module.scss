@@ -1,0 +1,153 @@
+/* TabsBasic.css */
+.main {
+  padding: 40px;
+@media screen and (max-width: 768px) {
+padding: 10px;
+}
+h1{
+  text-align: center;
+  font-family: var(--font-family2);
+font-size: 36px;
+font-weight: 800;
+line-height: 38.2px;
+letter-spacing: -0.005em;
+margin-top: 20px;
+margin-bottom: 20px;
+
+
+}
+.p{
+  text-align: center;
+  color: var(--primary-text);
+  font-family: var(--font-family1);
+font-size: 24px;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: -0.005em;
+margin-bottom: 30px;
+
+}
+}
+
+.tabs_container {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
+  justify-items: center;
+}
+.img{
+  height: 55px;
+  width:55px;
+}
+
+@media screen and (max-width: 768px) {
+  .tabs_container {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.tab_list {
+  display: flex;
+
+  flex-direction: column;
+  width: 80%; /* Adjusted to occupy full width on mobile */
+}
+.di{
+  margin-left: 15px;
+  display: flex;
+  justify-content:center ;
+  flex-direction: column;
+
+  h2{
+    font-family: var(--font-family1);
+font-size: 24px;
+color: var(--primary-text);
+font-weight: 500;
+line-height: 30px;
+letter-spacing: -0.005em;
+text-align: left;
+  }
+  p{
+    font-family: var(--font-family1);
+font-size: 19px;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: -0.005em;
+text-align: left;
+
+  }
+}
+.tab {
+  width: 50%;
+  padding: 10px 20px;
+  display: flex;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+@media screen and (max-width: 768px) {
+width: 80%;
+}
+}
+
+.tab:last-child {
+  border-right: none;
+}
+
+.tab.active {
+  box-shadow: 0px 4px 25px 0px #00000040;
+  border-radius: 20px;
+  padding: 14px;
+  margin-left: 60px;
+  transition: box-shadow 0.6s ease, padding 0.6s ease; /* Add transition */
+}
+
+
+.tab_content {
+  display: flex;
+  width: 80%;
+
+  align-items: center;
+  justify-content: flex-end; /* Adjust alignment */
+@media screen and (max-width: 768px) {
+width: 100%;
+}
+}
+
+.tab_panel {
+
+  padding: 20px;
+@media screen and (max-width: 768px) {
+width: 90%;
+}
+}
+.cir{
+@media screen and (max-width: 768px) {
+display: none;
+}
+}
+.para{
+  font-family: var(--font-family1);
+font-size: 20px;
+font-weight: 400;
+margin-left: 20px;
+line-height: 30px;
+letter-spacing: -0.005em;
+text-align: left;
+}
+.star{
+  width: 35px;
+height: 35px;
+margin-left: 10px;
+margin-top: 15px;
+color: var(--primary-text);
+@media screen and (max-width: 768px) {
+  width: 30px;
+height: 30px;
+}
+}
+
+.vector_img{
+  margin-bottom: 20px;
+}

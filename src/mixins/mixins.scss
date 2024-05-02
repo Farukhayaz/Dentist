@@ -1,0 +1,22 @@
+
+
+@mixin flex-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin fonta{
+    font-family:var(--font-family1) ;
+font-size: 22px;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: -0.005em;
+}
+
+@mixin common-properties{
+display: flex;
+justify-content: center;
+margin: -4px 10px;
+align-items: center;
+}

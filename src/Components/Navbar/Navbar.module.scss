@@ -1,0 +1,92 @@
+@import "../../variables/variables.scss";
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 4px rgba(0,0,0,.1);
+    color: black;
+    padding: 15px 20px;
+  }
+  .mainn{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo{
+    height: 58px;
+    width: 150px;
+    @media screen and (max-width: 768px){
+      height: 60px;
+      width: 150px;
+    }
+  }
+  .mobileMenuIcon {
+    display: none; /* Hide by default for desktop */
+    cursor: pointer;
+    color:var(--primary-text);
+    @media screen and (max-width: 768px){
+margin-top: 16px;
+    }
+  }
+  
+  .navLinks {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+  }
+  
+  .navLinks li {
+    margin-right: 28px;
+    font-size: $nav-font-size;
+    font-family: var(--font-family1);
+   
+
+  }
+  
+  .navLinks li:last-child {
+    margin-right: 0;
+  }
+  
+  .navLinks a {
+    color:var(--secondary);
+    font-size: 24px;
+    font-weight: 400;
+    text-decoration: none;
+    &:hover{
+      color: var(--primary-text);
+        border-bottom: 3px solid var(--primary-text);
+      }
+  }
+  /* Media Queries for Responsive Design */
+  @media screen and (max-width: 768px) {
+
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  .mainn{
+    width: 100%;
+  }
+    .mobileMenuIcon {
+      display: block; /* Show only on mobile */
+      font-size: 1.5rem;
+    }
+  
+    .navLinks {
+    width: 100%;
+
+      display: none; /* Hide by default on mobile */
+      flex-direction: column;
+      width: 100%;
+li{
+    margin-top: 10px;
+}
+    }
+  
+    .navLinks.show {
+      display: flex; /* Show when menu is toggled */
+    }
+  }
+  

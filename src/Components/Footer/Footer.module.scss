@@ -1,0 +1,43 @@
+// CustomShapeDividerTop.module.scss
+.main{
+  margin-top: 30px;
+}
+.customShapeDividerTop {
+
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.customShapeDividerTop svg {
+  position: relative;
+  display: block;
+  background: var(--primary-text);
+  width: calc(100% + 1.3px);
+  height: 200px;
+  
+  @media screen and (max-width: 768px) {
+    height:180px ;
+  }
+}
+
+.customShapeDividerTop .shapeFill {
+  fill: #FFFFFF;
+}
+
+.footer{
+  background: var(--primary-text);
+
+}
+.di{
+  display: flex;
+  justify-content: center;
+  margin-bottom: -20px;
+}
+.logo{
+  height: 80px;
+  z-index: 5;
+  border-radius: 20px;
+  width: 200px;
+}

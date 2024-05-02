@@ -1,0 +1,141 @@
+// MainSection.module.scss
+
+.home {
+    background: linear-gradient(254.35deg, #B6FBFF 12.45%, #83A4D4 88.42%);
+    padding: 20px 0;
+  
+    &__container {
+      width: 92%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      @media screen and (max-width: 768px) {
+      }
+    }
+  
+    &__img {
+      // width: 445px;
+// height: 478px;
+        margin-left: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 20px;
+      align-items: center;
+  
+      @media screen and (max-width: 768px) {
+    margin-left: 0;  
+    }
+      img {
+        width: 380px;
+        border-radius: 10px;
+       
+        @media screen and (max-width: 768px) {
+width: 310px;
+margin-left: 0px;
+        }  
+    }
+  
+     
+    }
+  
+    &__data {
+      display: flex;
+      width: 60%;
+      flex-direction: column;
+      justify-content: center;
+  
+      @media screen and (max-width: 768px) {
+        text-align: center;
+        width: 100%;
+        // order: 1;
+      }
+    }
+  
+    &__title {
+font-weight: 900;
+line-height: 50px;
+letter-spacing: -0.0001em;
+text-align: left;
+      color: white;
+      font-family: var(--font-family2) !important;
+      font-size: 32px;
+      margin-bottom: 20px;
+  
+      @media screen and (max-width: 768px) {
+        font-size: 22px;
+line-height: 30px;
+
+      }
+    }
+  
+    &__description {
+font-weight: 400;
+line-height: 30px;
+letter-spacing: -0.005em;
+text-align: left;
+      font-family: var(--font-family1);
+      color: white;
+      font-size: 18px;
+      width: 75%;
+      margin-bottom: 30px;
+  
+      @media screen and (max-width: 768px) {
+        font-size: 17px;
+        width: 100%;
+      }
+    }
+  
+    .chat {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+        gap: 20px; 
+  
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+        width: 70%;
+        justify-content: center;
+      }
+    }
+  
+    .one {
+      width: auto;
+height: 70px;
+        display: flex;
+        color: white;
+        flex-direction: column;
+        border-radius: 10px; 
+        margin-right: 13px;
+      @media screen and (max-width: 768px) {
+        padding: 10px 15px;
+        flex-direction: column;
+
+
+      }
+    }
+  
+    h2 {
+      color: white;
+      font-weight: normal;
+      margin: 0;
+      font-size: 20px;
+  
+      @media screen and (max-width: 768px) {
+        font-size: 16px;
+      }
+    }
+  
+    .ic {
+      font-size: 40px;
+      margin-bottom: 10px;
+      color: #b6fbff;
+      @media screen and (max-width: 768px) {
+    margin-bottom: 5px;  
+    }
+    }
+  
+
+  }
+  
