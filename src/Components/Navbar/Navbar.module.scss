@@ -1,6 +1,11 @@
 @import "../../variables/variables.scss";
 .navbar {
     display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
     justify-content: space-between;
     overflow: hidden;
     align-items: center;
@@ -35,14 +40,12 @@ margin-top: 16px;
     list-style-type: none;
     width: 100%;
     display: flex;
+    
   }
-  
   .navLinks li {
     margin-right: 28px;
     font-size: $nav-font-size;
     font-family: var(--font-family1);
-   
-
   }
   
   .navLinks li:last-child {
@@ -89,4 +92,6 @@ li{
       display: flex; /* Show when menu is toggled */
     }
   }
+
+
   

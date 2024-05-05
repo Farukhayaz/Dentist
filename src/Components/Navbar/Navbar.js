@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { FaBars,FaArrowDown } from 'react-icons/fa';
 import styles from './Navbar.module.scss';
 import CustomButton from '../CustomButton/CustomButton';
+import { Link } from 'react-router-dom';
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -19,11 +20,11 @@ const Navbar = () => {
       </div>
    </div>
       <ul className={`${styles.navLinks} ${menuOpen ? styles.show : ''}`}>
-        <li><a href="/">Home</a></li>
-        <li><a href="/">Find a Dentist</a></li>
-        <li><a href="/">About us</a></li>
-        <li><a href="/">Contact us</a></li>
-      <CustomButton title="Signup / Login" variant="primary" icon={FaArrowDown} size="normal1" />
+        <li><Link ClassName={styles.active}  to="/">Home</Link></li>
+        <li><Link ClassName={styles.active}  to="/dentist">Find a Dentist</Link></li>
+        <li><Link ClassName={styles.active}  to="/about">About us</Link></li>
+        <li><Link ClassName={styles.active}  to="/contact">Contact us</Link></li>
+      <CustomButton title="Signup / Login" variant="primary" Icon={FaArrowDown} size="normal1" />
       </ul>
 
     </nav>

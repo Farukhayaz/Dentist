@@ -1,0 +1,78 @@
+.pricing-plan {
+    width: 320px;
+    margin: 10px;
+    border-radius: 5px;
+    padding-bottom: 4px;
+    text-align: center;
+background:white;
+border-radius: 30px;
+box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+transition: transform 0.3s ease;
+
+&:hover {
+  transform: translateY(-5px);
+cursor: pointer;
+}
+
+@media screen and (max-width: 768px){
+  width: 300px;
+}
+
+    .price {
+      padding: 35px;
+      // background: #95b2da;
+font-family: var(--font-family2);
+      color: white;
+      font-size: 22px;
+      font-weight: bold;
+      h1{
+        color: white;
+        margin-top: -20px;
+        margin-bottom: 10px;
+      }
+    }
+    
+
+    .plan-details {
+      margin-top: 10px;
+      
+
+      .category {
+        font-size: 23px;
+        font-family: var(--font-family1);
+        font-weight: bold;
+        color: #83A4D4;
+
+      }
+
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        width: 60%;
+        margin-left: 25%;
+        margin-top: 20px;
+
+        li {
+          margin-bottom: 13px;
+          font-size: 19px;
+          display: flex;
+          justify-content: start;
+          // justify-content: center;
+          .tick{
+            font-size: 23px;
+            margin-right: 4px;
+            margin-left: -14px;
+            // margin-right: 10px;
+            color: #83a4d4;
+                      }   
+        }
+      }
+
+      .subscription {
+        // margin-top: 10px;
+        border: 1px solid #000;
+
+      }
+    }
+  }

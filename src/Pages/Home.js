@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from '../Components/Navbar/Navbar'
 import MainSection from '../Components/MainSection/MainSection'
 import Categories from '../Components/Categories/Categories'
 import DModel from '../Components/DModel/DModel'
@@ -11,8 +10,7 @@ import Footer from '../Components/Footer/Footer'
 
 export default function Home() {
   return (
-    <div>
-        <Navbar/>
+    <div className="di">
     <MainSection />
     <Categories />
     <DModel />
